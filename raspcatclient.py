@@ -28,7 +28,7 @@ class grabboot(TK.Tk):
         self.finalitzar = False
         
         #browser
-        browser_command = '/usr/bin/chromium --user-data-dir={profile_dir} --kiosk  %s '.format(  profile_dir = PROFILE_DIR )
+        browser_command = '/usr/bin/chromium-browser --user-data-dir={profile_dir} --kiosk  %s '.format(  profile_dir = PROFILE_DIR )
         self.wb = webbrowser.get(browser_command)
         
         #diccionari de settings
