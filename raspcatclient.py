@@ -191,9 +191,9 @@ class grabboot(TK.Tk):
         t.start()                    
 
     def stop_browsers(self):
-        os.system("killall chromium")
+        os.system("killall chromium-browser")
         time.sleep(1)
-        os.system("killall -9 chromium")
+        os.system("killall -9 chromium-browser")
         time.sleep(1)
         
     #------------------------------------------------------------------------------
